@@ -1,0 +1,11 @@
+doc/
+generated_cpp/
+generator/.preprocessed.tmp
+generator/*.log
+plugins/
+*/*/debug/
+*/*/release/
+generator/release/
+generator/generator
+*.so
+*.so.*

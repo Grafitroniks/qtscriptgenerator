@@ -1,0 +1,8 @@
+QtScriptGenerator for Qt5
+=========================
+
+$ qmake
+$ make
+$ sudo make install
+
+This will install the script plugins to the system Qt plugin path.
