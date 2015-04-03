@@ -961,6 +961,10 @@
     <modify-function signature="unmap(uchar*)" remove="all" />
     <!-- Can't provide same API and performance -->
   </object-type>
+  <object-type name="QFileDevice">
+    <modify-function signature="map(qint64,qint64,QFile::MemoryMapFlags)" remove="all"/>
+    <modify-function signature="unmap(uchar*)" remove="all"/>
+  </object-type>
 
   <object-type name="QIODevice"/>
   <object-type name="QStateMachine::SignalEvent" polymorphic-id-expression="%1-&gt;type() == QEvent::Signal" />

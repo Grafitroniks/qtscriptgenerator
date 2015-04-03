@@ -592,6 +592,10 @@
     <modify-function signature="map(qint64,qint64,QFile::MemoryMapFlags)" remove="all"/>
     <modify-function signature="unmap(uchar*)" remove="all"/>
   </object-type>
+  <object-type name="QFileDevice">
+    <modify-function signature="map(qint64,qint64,QFile::MemoryMapFlags)" remove="all"/>
+    <modify-function signature="unmap(uchar*)" remove="all"/>
+  </object-type>
 
   <object-type name="QSignalMapper">
     <!-- ### overloads -->
