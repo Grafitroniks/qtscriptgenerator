@@ -2111,28 +2111,58 @@
     <modify-function signature="operator&gt;&gt;(QChar&amp;)">
       <remove/>
     </modify-function>
-    <modify-function signature="operator&lt;&lt;(const void*)">
+    <modify-function signature="operator&lt;&lt;(QChar)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(char)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(signed short)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(unsigned short)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(signed int)">
       <remove/>
     </modify-function>
     <modify-function signature="operator&lt;&lt;(unsigned int)">
       <remove/>
     </modify-function>
-    <modify-function signature="operator&lt;&lt;(qlonglong)">
-      <remove/>
-    </modify-function>
-    <modify-function signature="operator&lt;&lt;(const QChar &amp;)">
+    <modify-function signature="operator&lt;&lt;(signed long)">
       <remove/>
     </modify-function>
     <modify-function signature="operator&lt;&lt;(unsigned long)">
       <remove/>
     </modify-function>
-    <modify-function signature="operator&lt;&lt;(signed long)">
+    <modify-function signature="operator&lt;&lt;(qlonglong)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(qulonglong)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(float)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(double)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(const QString &amp;)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(QLatin1String)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(const QStringRef &amp;)">
+      <remove/>
+    </modify-function>
+    <modify-function signature="operator&lt;&lt;(const QByteArray &amp;)">
       <remove/>
     </modify-function>
     <modify-function signature="operator&lt;&lt;(const char*)">
       <remove/>
     </modify-function>
-    <modify-function signature="operator&lt;&lt;(unsigned short)">
+    <modify-function signature="operator&lt;&lt;(const void*)">
       <remove/>
     </modify-function>
     <modify-function signature="operator&gt;&gt;(qulonglong&amp;)">
