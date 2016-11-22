@@ -382,6 +382,7 @@
   <rejection class="QList" function-name="node_copy"/>
   <rejection class="QList" function-name="node_destruct"/>
   <rejection class="QList" function-name="toSet"/>
+  <rejection class="QList" function-name="op_eq_impl"/>
   <rejection class="QObject" function-name="receivers"/>
   <rejection class="QObject" function-name="findChild"/>
   <rejection class="QObject" function-name="findChildren"/>
