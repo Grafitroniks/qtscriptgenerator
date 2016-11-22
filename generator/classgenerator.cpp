@@ -1058,6 +1058,10 @@ void maybeDeclareMetaType(QTextStream &stream, const QString &typeName,
     if (nameFootPrint == QLatin1String("QStringList<QString>")) {
         return; // ### wtf...
     }
+    if (nameFootPrint == QLatin1String("QList<QModelIndex>")) {
+        return; // ### wtf2...
+    }
+
 
     if (registeredTypeNames.contains(nameFootPrint) || (QMetaType::type(name.toLatin1()) != 0))
         return;
