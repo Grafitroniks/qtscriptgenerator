@@ -16,14 +16,6 @@ Q_DECLARE_METATYPE(QFontMetricsF)
 namespace QtMetaTypePrivate {
 
 template <>
-inline void *QMetaTypeFunctionHelper<QFontInfo, true>::Create(const void *t)
-{
-    if (t)
-        return new QFontInfo(*static_cast<const QFontInfo*>(t));
-    return new QFontInfo(QFont());
-}
-
-template <>
 inline void *QMetaTypeFunctionHelper<QFontInfo, true>::Construct(void *where, const void *t)
 {
     if (t)
@@ -36,14 +28,6 @@ inline void *QMetaTypeFunctionHelper<QFontInfo, true>::Construct(void *where, co
 
 
 template <>
-inline void *QMetaTypeFunctionHelper<QFontMetrics, true>::Create(const void *t)
-{
-    if (t)
-        return new QFontMetrics(*static_cast<const QFontMetrics*>(t));
-    return new QFontMetrics(QFont());
-}
-
-template <>
 inline void *QMetaTypeFunctionHelper<QFontMetrics, true>::Construct(void *where, const void *t)
 {
     if (t)
@@ -53,14 +37,6 @@ inline void *QMetaTypeFunctionHelper<QFontMetrics, true>::Construct(void *where,
 
 
 
-
-template <>
-inline void *QMetaTypeFunctionHelper<QFontMetricsF, true>::Create(const void *t)
-{
-    if (t)
-        return new QFontMetricsF(*static_cast<const QFontMetricsF*>(t));
-    return new QFontMetricsF(QFont());
-}
 
 template <>
 inline void *QMetaTypeFunctionHelper<QFontMetricsF, true>::Construct(void *where, const void *t)
