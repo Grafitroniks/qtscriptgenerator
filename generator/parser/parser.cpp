@@ -460,6 +460,7 @@ bool Parser::parseDeclaration(DeclarationAST *&node)
     case Token_asm:
       return parseAsmDefinition(node);
 
+    case Token_Q_ENUM:
     case Token_Q_ENUMS:
         return parseQ_ENUMS(node);
 
@@ -4375,7 +4376,7 @@ bool Parser::parseThrowExpression(ExpressionAST *&node)
 
 bool Parser::parseQ_ENUMS(DeclarationAST *&node)
 {
-  if (token_stream.lookAhead() != Token_Q_ENUMS)
+  if (token_stream.lookAhead() != Token_Q_ENUMS && token_stream.lookAhead() != Token_Q_ENUM)
     return false;
 
   if (token_stream.lookAhead(1) != '(')
