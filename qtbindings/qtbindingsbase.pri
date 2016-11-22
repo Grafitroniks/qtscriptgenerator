@@ -4,6 +4,7 @@ INCLUDEPATH += .
 DESTDIR = $$PWD/../plugins/script
 QT += script
 CONFIG += plugin
+CONFIG += debug_and_release build_all
 GENERATEDCPP = $$PWD/../generated_cpp
 CONFIG(debug, debug|release):TARGET=$$qtLibraryTarget($$TARGET)d
 CONFIG(release, debug|release):TARGET=$$qtLibraryTarget($$TARGET)
