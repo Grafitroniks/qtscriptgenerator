@@ -543,6 +543,9 @@
       <modify-function signature="inverted(bool*)const">
         <modify-argument index="1">
             <remove-argument/>
+            <conversion-rule class="native">
+            <insert-template name="core.prepare_removed_bool*_argument"/>
+            </conversion-rule>
         </modify-argument>
       </modify-function>
   </value-type>
@@ -933,6 +936,9 @@
         <access modifier="private"/>
         <modify-argument index="1">
             <!-- <remove-default-expression/> -->
+          <conversion-rule class="native">
+          <insert-template name="core.prepare_removed_bool*_argument"/>
+          </conversion-rule>
         </modify-argument>
       </modify-function>
 
@@ -968,6 +974,9 @@
       <modify-function signature="inverted(bool*)const">
         <modify-argument index="1">
             <remove-argument/>
+            <conversion-rule class="native">
+            <insert-template name="core.prepare_removed_bool*_argument"/>
+            </conversion-rule>
         </modify-argument>
       </modify-function>
   </value-type>
@@ -1720,7 +1729,7 @@
           <remove-argument/>
           <conversion-rule class="native">
           <insert-template name="core.prepare_removed_bool*_argument"/>
-          </conversion-rule>            
+          </conversion-rule>
         </modify-argument>
         <modify-argument index="return">
           <conversion-rule class="native">
@@ -1734,7 +1743,7 @@
           <remove-argument/>
           <conversion-rule class="native">
           <insert-template name="core.prepare_removed_bool*_argument"/>
-          </conversion-rule>            
+          </conversion-rule>
         </modify-argument>
         <modify-argument index="return">
           <conversion-rule class="native">
@@ -1748,7 +1757,7 @@
           <remove-argument/>
           <conversion-rule class="native">
           <insert-template name="core.prepare_removed_bool*_argument"/>
-          </conversion-rule>            
+          </conversion-rule>
         </modify-argument>
         <modify-argument index="return">
           <conversion-rule class="native">
@@ -3051,7 +3060,7 @@
           <remove-argument/>
           <conversion-rule class="native">
           <insert-template name="core.prepare_removed_bool*_argument"/>
-          </conversion-rule>            
+          </conversion-rule>
         </modify-argument>
         <modify-argument index="return">
           <conversion-rule class="native">
@@ -3065,7 +3074,7 @@
           <remove-argument/>
           <conversion-rule class="native">
           <insert-template name="core.prepare_removed_bool*_argument"/>
-          </conversion-rule>            
+          </conversion-rule>
         </modify-argument>
         <modify-argument index="return">
           <conversion-rule class="native">
@@ -3079,7 +3088,7 @@
           <remove-argument/>
           <conversion-rule class="native">
           <insert-template name="core.prepare_removed_bool*_argument"/>
-          </conversion-rule>            
+          </conversion-rule>
         </modify-argument>
         <modify-argument index="return">
           <conversion-rule class="native">
@@ -3093,7 +3102,7 @@
           <remove-argument/>
           <conversion-rule class="native">
           <insert-template name="core.prepare_removed_bool*_argument"/>
-          </conversion-rule>            
+          </conversion-rule>
         </modify-argument>
         <modify-argument index="return">
           <conversion-rule class="native">
