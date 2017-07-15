@@ -80,6 +80,9 @@
     <modify-function signature="waitForNewConnection(int,bool*)">
       <modify-argument index="2">
         <remove-argument/>
+        <conversion-rule class="native">
+          <insert-template name="core.prepare_removed_bool*_argument"/>
+        </conversion-rule>
       </modify-argument>
     </modify-function>
   </object-type>
@@ -97,6 +100,9 @@
     <modify-function signature="waitForNewConnection(int,bool*)">
       <modify-argument index="2">
         <remove-argument/>
+        <conversion-rule class="native">
+          <insert-template name="core.prepare_removed_bool*_argument"/>
+        </conversion-rule>
       </modify-argument>
     </modify-function>
   </object-type>
