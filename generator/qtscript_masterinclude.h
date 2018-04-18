@@ -39,6 +39,8 @@
 **
 ****************************************************************************/
 
+#define QT_NO_OPENGL
+
 #define QT_NO_STL
 #include <QtCore/QtCore>
 #include <QtGui/QtGui>

@@ -78,9 +78,9 @@ struct Preprocess
 #endif
 
         // Environment INCLUDE
-        QString includePath = getenv("INCLUDE");
+/*        QString includePath = getenv("INCLUDE");
         if (!includePath.isEmpty())
-            includes += includePath.split(path_splitter);
+            includes += includePath.split(path_splitter); */
 
         // Includes from the command line
         if (!commandLineIncludes.isEmpty())

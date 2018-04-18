@@ -483,8 +483,6 @@
   <enum-type name="Qt::AnchorPoint"/>
   <enum-type name="Qt::CoordinateSystem"/>
   <enum-type name="Qt::GestureFlag" flags="Qt::GestureFlags"/>
-  <enum-type name="Qt::GestureState"/>
-  <enum-type name="Qt::GestureType"/>
   <enum-type name="Qt::InputMethodHint" flags="Qt::InputMethodHints"/>
   <enum-type name="Qt::NavigationMode"/>
   <enum-type name="Qt::RenderHint"/>
