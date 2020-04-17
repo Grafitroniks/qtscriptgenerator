@@ -1386,7 +1386,10 @@ void writeInclude(QTextStream &stream, const Include &inc)
         stream << "<";
     else
         stream << "\"";
-    stream << inc.name;
+    if (inc.name == "qevent.h")
+	    stream << "QtGui/qevent.h";
+    else
+    	stream << inc.name;
     if (inc.type == Include::IncludePath)
         stream << ">";
     else

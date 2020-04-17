@@ -93,7 +93,10 @@ void ShellImplGenerator::write(QTextStream &s, const AbstractMetaClass *meta_cla
         else
             s << "<";
 
-        s << inc.name;
+	if (inc.name == "qevent.h")
+	    s << "QtGui/qevent.h";
+	else	
+            s << inc.name;
 
         if (inc.type == Include::LocalPath)
             s << "\"";
