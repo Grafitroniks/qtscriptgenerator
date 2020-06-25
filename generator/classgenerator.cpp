@@ -1061,6 +1061,10 @@ void maybeDeclareMetaType(QTextStream &stream, const QString &typeName,
     if (nameFootPrint == QLatin1String("QList<QModelIndex>")) {
         return; // ### wtf2...
     }
+    if (nameFootPrint == QLatin1String("QSocketNotifier::Type"))
+    {
+        return; // ### wtf3...
+    }
 
 
     if (registeredTypeNames.contains(nameFootPrint) || (QMetaType::type(name.toLatin1()) != 0))
